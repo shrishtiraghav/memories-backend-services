@@ -1,4 +1,4 @@
-import validator from "validatorjs";
+import Validator from "validatorjs";
 
 export const validator = (body, rules, customMessages, callback) => {
     const validation = new Validator(body, rules, customMessages);
