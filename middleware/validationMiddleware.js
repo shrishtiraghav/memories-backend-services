@@ -8,7 +8,7 @@ export const createPostValidation = (req, res, next) => {
                 "tags": "required|string",
                 "selectedFile": "required|string",
             }
-    const validation = new Validator(req.body, validationRule, customMessages);
+    const validation = new Validator(req.body, validationRule);
     validation.passes(() => {console.log("test passed"); next();});
     validation.fails(() => callback(validation.errors, false));
 };
