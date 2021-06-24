@@ -1,4 +1,4 @@
-import validator from '../helpers/validate.js';
+import { validator } from '../helpers/validate.js';
 
 export const createPostValidation = (req, res, next) => {
     const validationRule = {
