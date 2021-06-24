@@ -17,6 +17,7 @@ export const createPostValidation = (req, res, next) => {
                     data: err
                 });
         } else {
+            console.log("pass control to next function");
             next();
         }
     });
